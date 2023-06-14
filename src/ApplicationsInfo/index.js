@@ -21,10 +21,11 @@ function ApplicationsInfo() {
         <>
           {" "}
           <div className="div">
-            <li>Consumed Qantity {ele.ConsumedQuantity}</li>
-            <li>Cost {ele.Cost}</li>
-            <li>Date {ele.Date}</li>
+            <li>Consumed Qantity: {ele.ConsumedQuantity}</li>
+            <li>Cost: {ele.Cost}</li>
+            <li>Date: {ele.Date}</li>
             <li>Environment: {ele.Tags.environment}</li>
+            <li>Location : {ele.ResourceLocation}</li>
           </div>
           <br />
         </>
@@ -32,7 +33,14 @@ function ApplicationsInfo() {
     });
   };
 
-  return <div className="main-div">{handleList()}</div>;
+  return (
+    <>
+      <h1 style={{ textAlign: "center" }}>
+        Here is more information about applications
+      </h1>{" "}
+      <div className="main-div">{handleList()}</div>
+    </>
+  );
 }
 
 export default ApplicationsInfo;
