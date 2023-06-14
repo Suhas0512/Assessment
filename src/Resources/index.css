@@ -1,10 +1,8 @@
 .main-div {
-display: flex;
+display: grid !important;
+grid-template-columns: repeat(5 , 200px) !important;
 padding: 20px;
 width: 100%;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-around;
 margin-top: 10px;
 }
 .list-class{
@@ -12,9 +10,8 @@ margin-top: 10px;
     border: 1px solid;
     list-style-type: none;
     padding: 10px;
-    width: 20%;
     text-decoration: underline;
-    width: 100px;
+    width: 150px !important;
     height: 100px;
     box-shadow: 3px 3px;
     display: grid;

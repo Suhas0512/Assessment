@@ -16,6 +16,6 @@ flex-direction: column;
 .div{
     background: bisque;
     padding: 10px;
-    width: 25%;
+    width: 100% !important;
     border-radius: 20px;
 }

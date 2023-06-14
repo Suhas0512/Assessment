@@ -19,7 +19,6 @@ function ResourcesInfo() {
     return resources.map((ele) => {
       return (
         <>
-          {" "}
           <div className="div">
             <li>Consumed Qantity {ele.ConsumedQuantity}</li>
             <li>Cost {ele.Cost}</li>
@@ -32,7 +31,14 @@ function ResourcesInfo() {
     });
   };
 
-  return <div className="main-div">{handleList()}</div>;
+  return (
+    <>
+      <h1 style={{ textAlign: "center" }}>
+        Here is more information about resources
+      </h1>{" "}
+      <div className="main-div">{handleList()}</div>
+    </>
+  );
 }
 
 export default ResourcesInfo;

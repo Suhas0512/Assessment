@@ -20,11 +20,19 @@ function Resources() {
           <div onClick={() => handleRedirect(ele)} className="list-class">
             {ele}
           </div>
+          <br />
         </div>
       );
     });
   };
-  return <div className="main-div">{handleList()}</div>;
+  return (
+    <>
+      <h1 style={{ textAlign: "center" }}>
+        Here are the list of resources (Click for more information)
+      </h1>
+      <div className="main-div">{handleList()}</div>
+    </>
+  );
 }
 
 export default Resources;
