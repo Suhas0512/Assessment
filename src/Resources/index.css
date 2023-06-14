@@ -1,0 +1,21 @@
+.main-div {
+display: flex;
+padding: 20px;
+width: 100%;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+margin-top: 10px;
+}
+.list-class{
+    cursor: pointer;
+    border: 1px solid;
+    list-style-type: none;
+    padding: 10px;
+    width: 20%;
+    text-decoration: underline;
+    width: 100px;
+    height: 100px;
+    box-shadow: 3px 3px;
+    display: grid;
+}

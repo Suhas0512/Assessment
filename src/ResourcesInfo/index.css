@@ -1,0 +1,21 @@
+.main-div {
+display: flex;
+padding: 20px;
+justify-content: center;
+width: 100%;
+flex-direction: column;
+}
+.list-class{
+    cursor: pointer;
+    border: 1px solid;
+    list-style-type: none;
+    padding: 10px;
+    width: 20%;
+    text-decoration: underline;
+}
+.div{
+    background: bisque;
+    padding: 10px;
+    width: 25%;
+    border-radius: 20px;
+}
